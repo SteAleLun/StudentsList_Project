@@ -47,7 +47,9 @@ public class Student {
                 getStudents.add(student);
             }
         }
-        return getStudents;
+
+        students = getStudents;
+        return students;
     }
 
 
