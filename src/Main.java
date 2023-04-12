@@ -47,7 +47,7 @@ public class Main {
 
         System.out.println();
 
-        students = Student.removeAdult(students);
+        Student.removeAdult(students);
 
         // список студней после манипуляций
         for (Student student : students) {

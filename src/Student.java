@@ -38,18 +38,9 @@ public class Student {
         }
     }
 
-    public static ArrayList<Student> removeAdult(ArrayList<Student> students){
 
-        ArrayList<Student> getStudents = new ArrayList<>();
-
-        for (Student student : students){
-            if(student.getAge() <= 18){
-                getStudents.add(student);
-            }
-        }
-
-        students = getStudents;
-        return students;
+    public static void removeAdult(ArrayList<Student> students){
+        students.removeIf(student -> student.getAge() > 18);
     }
 
 
